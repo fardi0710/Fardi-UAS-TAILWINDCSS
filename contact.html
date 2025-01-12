@@ -1,0 +1,95 @@
+<html>
+<head>
+  <title>FARDI HAMDAN CV</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="icon" href="assets/FARDIBGBLUE.jpg" type="image/png">
+</head>
+<body>
+<!-- Header Section Start -->
+<header class="bg-blue-100">
+    <div class="container mx-auto flex justify-between items-center py-4">
+      <div>
+        <img src="assets/FARDI1.jpg" alt="FARDI HAMDAN" class="h-24 mr-4"> 
+        </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="hover:bg-blue-500 hover:text-white rounded-full border border-slate-300">Home</a>
+        <a href="education.html" class="hover:bg-blue-500 hover:text-white rounded-full border border-slate-300">Education</a>
+        <a href="experience.html" class="hover:bg-blue-500 hover:text-white rounded-full border border-slate-300">Experience</a>
+        <a href="contact.html" class="hover:bg-blue-500 hover:text-white rounded-full border border-slate-300">Contact</a>
+      </div>
+      <button id="hamburgerButton" class="md:hidden">
+        <img src= "assets/hamburger.png" class="mx-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      </img>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class=" hidden fixed top-8 left-0 right-0 bottom-8 z-10 bg-white">
+    <div class="py-4 ">
+      <div class="flex justify-end px-4 ">
+        <button id="closeButton">
+          <img src="assets/close.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        </img>
+        </button>
+      </div>
+      <img src="assets/aic.png" alt="Website Logo" class="h-14 ml-2 "> 
+      <div class="mt-4">
+        <a href="index.html" class="block py-2 px-4 hover:bg-blue-500 hover:text-white rounded-full border border-slate-300">Home</a>
+        <a href="education.html" class="block py-2 px-4  hover:bg-blue-500 hover:text-white rounded-full border border-slate-300">Education</a>
+        <a href="experience.html" class="block py-2 px-4  hover:bg-blue-500 hover:text-white rounded-full border border-slate-300">Experience</a>
+        <a href="contact.html" class="block py-2 px-4  hover:bg-blue-500 hover:text-white rounded-full border border-slate-300">Contact</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    const hamburgerButton = document.getElementById('hamburgerButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeButton = document.getElementById('closeButton');
+    const icon = document.getElementById('icon');
+    const websiteIcon = document.getElementById('websiteIcon');
+
+    hamburgerButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      icon.classList.toggle('hidden');
+      websiteIcon.classList.toggle('hidden');
+    });
+
+    closeButton.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      icon.classList.remove('hidden'); 
+      websiteIcon.classList.add('hidden');
+    });
+  </script>
+  <!-- header end -->
+<!-- body start-->
+
+<div class="container md:mx-auto grid grid-cols-1 md:grid-cols-1 gap-8 px-4 py-12 ">
+    <div class="bg-white shadow-lg rounded-lg px-5 py-6 hover:bg-gray-400">
+        <h2 class="text-xl text-dark font-bold motion-preset-shrink motion-duration-2000">Please Hit Me on my :</h2>
+        <ul class="list-disc pl-6 mt-2 text-dark font-semibold">
+            <li class="text-dark">- Whatsapp = +62 821 1343 8887</li>
+            <li class="text-dark">- My Email = fardi.hamdan@gmail.com</li>
+          </ul>
+    </div>
+</div>
+
+
+
+
+<!-- footer start-->
+<footer class="bg-blue-100 text-black py-10 mt-20 rounded-t-lg flex justify-end ">
+    <div class="text-center md:text-right mb-6 md:mb-0 pr-4">
+        <a href="https://gmail.com" target="_blank" class="w-18 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">fardi.hamdan@gmail.com</a>
+        <p class="text-black font-semibold text-2xl">© 2025 FHK All rights reserved.</p>
+        </div>
+</footer>
+
+<!-- footer end -->
+
+
+
+
+
